@@ -5,21 +5,39 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-color: rgb(18,17,35);
+    color: rgb(248, 239, 239);
+    box-sizing: border-box;
+}
 :root {
-    --f-lob: 'Lobster', cursive;
+    --f-baumans: 'Baumans', cursive;
 }
 
-.caps-char {
-    font-size: 40px;
-    font-family: var(--f-lob);
-    letter-spacing: 4px;
-    font-weight: 1500;
-}
-.home-section {
+#root{
+    display:grid;
+    grid-template-columns: 0.25fr 1fr;
     min-height: 100vh;
-    width: 100vw;
-    background-color: #ff9016;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+}
 
+#navbar{
+    background-color:rgb(25,30,45);
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100px ;
+    margin-bottom: 20px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+#main{
+    /* background-color: burlywood; */
 }

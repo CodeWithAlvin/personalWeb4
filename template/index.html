@@ -1,29 +1,49 @@
 {% extends 'base.html' %}
 <!--Title goes here-->
-{% block title %}PORTFOLIO | ALVIN SAINI{% endblock %}
+{% block title %}ALVIN SAINI{% endblock %}
 <!--Head all css and fonts goes here-->
 {% block head %}
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
 <!-- FONTS-->
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
 <!-- Css file-->
-<link rel="stylesheet" href="/static/css/index.css" type="text/css" media="all" />
+<link
+  rel="stylesheet"
+  href="/static/css/index.css"
+  type="text/css"
+  media="all"
+/>
 {% endblock %}
 <!--this is for body-->
 {% block body %}
-<nav>
-    <div class="name-nav-div">
-        <p class="caps-char">
-            Alvin Saini
-        </p>
+<div id="root">
+  <nav id="navbar">
+    <div class="logo">
+      <img src="/static/media/logo.png" alt="logo">
     </div>
-</nav>
-<main>
-    <section class="home-section">
+    <li>
+      <a href="#"> <ol>About</ol> </a> 
+      <a href="#"> <ol>My Skills</ol> </a> 
+      <a href="#"> <ol>Projects</ol> </a> 
+      <a href="#"> <ol>Blog</ol> </a> 
+      <a href="#"> <ol>Contact</ol> </a> 
+      </ol>
+    </li>
+    <div class="connect">
+      <p>t</p>
+      <p>l</p>
+      <p>b</p>
+      <p>g</p>
+    </div>
+  </nav>
 
+  <main id="main">
+    <section class="home">
+      douis
     </section>
-</main>
 
+  </main>
+</div>
 {% endblock %}
 <!--the way for JavaScript-->
 {% block script %} {% endblock %}

@@ -6,38 +6,57 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(18,17,35);
-    color: rgb(248, 239, 239);
+    background-color:#fff;
     box-sizing: border-box;
 }
 :root {
     --f-baumans: 'Baumans', cursive;
 }
-
-#root{
-    display:grid;
-    grid-template-columns: 0.25fr 1fr;
+.home{
+    background: #006cff;
+    background: radial-gradient(left top,circle cover,rgba(100,66,255,.9) 15%,rgba(0,108,255,.9) 50%,rgba(12,180,206,.9) 85%);
+    background: -webkit-radial-gradient(left top,circle cover,rgba(100,66,255,.9) 15%,rgba(0,108,255,.9) 50%,rgba(12,180,206,.9) 85%);
     min-height: 100vh;
 }
+.navbar{
+    display:flex;
+    min-height: 70px;
+    align-items: center;
 
-#navbar{
-    background-color:rgb(25,30,45);
-    height: 100vh;
 }
+
 .logo{
+    
+}
+
+.navigation{
+    flex:1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height:100px ;
-    margin-bottom: 20px;
 }
-.logo img{
-    height: 100%;
-    width: 100%;
-    filter: brightness(120%);
-    cursor: pointer;
+.navigation a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin: 0px 20px;
+    text-decoration: none;
+    position: relative;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.navigation a::after{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    color: white;
+    background-color: white;
+    height: 3px;
+    width: 0px;
 }
 
-#main{
-    /* background-color: burlywood; */
+.navigation a::after::hover{
+    width: 100%;
 }
+
+

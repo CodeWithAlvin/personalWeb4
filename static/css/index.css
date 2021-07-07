@@ -119,8 +119,12 @@ a{
     align-items: center;
 }
 
+.heading{
+    height: 100px;
+}
 .heading h1{
-    font-size: 50px;
+    font-size: 70px;
+    opacity: 0.5;
     display: inline;
     text-align: center;
     position: relative;
@@ -174,9 +178,10 @@ a{
    
 }
 
-.project{
+.coursel{
     margin: 40px 0;
     padding-bottom: 30px;
+    cursor: pointer;
     border: 3px transparent;
     width: 70%;
     display: flex;
@@ -187,9 +192,9 @@ a{
     position: relative;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.project:hover{
+.coursel:hover{
     background-color:rgb(158, 197, 255) ;
-    color: #fff !important;
+    color: #000;
 }
 .thumbnail img{
     width: 100%;
@@ -205,17 +210,30 @@ a{
     justify-content: center;
     min-height: 150px;
     text-align: center;
-    color: #000;
+    color: rgb(209, 173, 173);
 }
-.project-heading{
+.coursel-heading{
     font-family: 'Quantico', sans-serif;
     font-size: 30px;
     font-weight: 1000;
     color:rgb(20, 108, 240);
 }
-.project-desc{
+.coursel-desc{
+    color:#000;
     font-size: 18px;
     font-weight: 500;
+}
+.btn-primary{
+    margin-top:20px;
+    padding: 15px 20px;
+    border: 2px transparent;
+    border-radius: 6px;
+    color: rgb(71, 71, 238);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2.3px;
+    background-color: rgba(173, 173, 173, 0.96);
+
 }
 .tags{
     display: flex;

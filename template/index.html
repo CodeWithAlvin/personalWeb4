@@ -24,14 +24,23 @@
     <div class="logo">
       <img src="/static/media/logo.png" alt="logo-image">
     </div>
-
-    <div class="navigation">
-      <a href="#about">About</a> 
-      <a href="#skills">My Skills</a> 
-      <a href="#projects">Projects</a> 
-      <a href="#blog">Blog</a> 
-      <a href="#contact">Contact</a> 
-    </div>  
+    <div>
+      <div id="nav-icon2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navigation" id="navigation">
+        <a href="#about">About</a> 
+        <a href="#skills">My Skills</a> 
+        <a href="#projects">Projects</a> 
+        <a href="#blog">Blog</a> 
+        <a href="#contact">Contact</a> 
+      </div>  
+    </div>
   </nav>
   <div class="front">
     <p class="large">Hey I'm Alvin Saini</p>
@@ -269,15 +278,38 @@
 
 </section>
 
-<section class="container" id="about">
-  <div class="heading">
+<section class="container about-sec" id="about">
+  <div class="heading ">
     <h1> My & Myself</h1>
   </div>
   <div class="about">
     <p>I’m a Full-Stack Web Developer, and Machine Learning Enthusiast , located in India.I use to spend my free time in Learning and applying Diffrent Machine/Deep Learning algorithm to make life Easy.</p>
-    <p>I am in web Development since october 2020. Except for programming I'm passionate about Robotics Aeronautics and Electronics </p>
+    <p>I am in web Development since october 2020. Except for programming I'm passionate about Robotics Aeronautics and Electronics.</p>
+    <p>Currently I am exploring Neural Networks and Augmented Reality.</p>
   </div>
+</section>
+<section class="container contact-section" id="contact">
+ <div class="contact-icon">
+  <a href="mailto:codewithalvin@gmail.com" class="icon contact">
+    <img src="https://img.icons8.com/pastel-glyph/50/000000/email.png"/>
+  </a>
+
+  <a href="https://twitter,cm/imalvinsaini/" class="icon contact">
+    <img src="https://img.icons8.com/ios-filled/64/000000/twitter.png"/>
+  </a>
+
+  <a href="https://www.linkedin.com/in/alvin-saini-96a193200/" class="icon contact">
+    <img src="https://img.icons8.com/ios-glyphs/50/000000/linkedin.png"/>
+  </a>
+
+  <a href="https://GitHub.com/codewithalvin/" class="icon contact">
+    <img src="https://img.icons8.com/ios-filled/50/000000/github.png"/>
+  </a>
+
+ </div>
 </section>
 {% endblock %}
 <!--the way for JavaScript-->
-{% block script %} {% endblock %}
+{% block script %}
+<script src="/static/js/script.js"></script>
+{% endblock %}

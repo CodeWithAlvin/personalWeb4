@@ -11,6 +11,7 @@ body{
     background-color:#fff;
     box-sizing: border-box;
     background-color:#f2f2f2;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -33,12 +34,13 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 .navbar{
     display:flex;
     min-height: 150px;
     align-items: center;
+    position: sticky;
 }
 
 .logo{
@@ -54,15 +56,17 @@ a{
     display: flex;
     margin-right: 40px;
     align-items: center;
+    transition:all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .navigation a{
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 2px;
     margin: 0px 20px;
     text-decoration: none;
     position: relative;
+    opacity: 1;
 }
 .navigation a::after{
     content:'';
@@ -79,7 +83,6 @@ a{
 .navigation a:hover::after{
     width: 100%;
 }
-
 .front{
     display: flex;
     flex-direction: column;
@@ -98,6 +101,7 @@ a{
     text-align: center;
     white-space: nowrap;
     animation: comeup 750ms ;
+    opacity: 1;
 }
 .small{
     overflow: hidden;
@@ -109,6 +113,7 @@ a{
     animation: comeup 750ms ;
     text-align: center;
     margin-top: 25px;
+    opacity: 1;
 }
 
 .container{
@@ -121,6 +126,7 @@ a{
 
 .heading{
     height: 100px;
+    text-align: center;
 }
 .heading h1{
     font-size: 70px;
@@ -143,11 +149,11 @@ a{
     animation: zigzag 1.7s 1 forwards ;
 }
 .skillgrid{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     align-items: center;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
     margin: 30px 0px;
     position: relative;
 }
@@ -172,6 +178,7 @@ a{
 .showcase{
     display: grid;
     width: 100%;
+    text-align: center;
     place-items: center;
     margin-top: 60px;
     grid-template-columns:1fr 1fr;
@@ -180,6 +187,8 @@ a{
 
 .coursel{
     margin: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 30px;
     cursor: pointer;
     border: 3px transparent;
@@ -246,11 +255,74 @@ a{
     text-align: center;
     display: inline;
     padding: 4px 4px ;
-    background-color:rgba(230 ,230, 207,0.96);
+    background-color:#e6e6cff5;
     border:2px transparent;
     border-radius: 4px;
     margin:10px 6px ;
 }
+.about-sec{
+    background: #98bdf0;
+}
+
+.about{
+    width:70%;
+    padding: 20px 40px;
+    margin: 60px 0px;
+    text-align: center;
+}
+.about p{
+    letter-spacing: 2px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+.contact-section{
+    background-color: rgb(233, 250, 245);
+}
+.contact-icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    width: 100px;
+    height: 100px;
+    transition:1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contact:hover{
+    background-color: rgb(20, 118, 246);
+}
+
+@media only screen and (max-width: 1000px) {
+    .navigation{
+        display: none;
+    }
+    .showcase{
+        grid-template-columns: 1fr;
+    }
+    .coursel{
+        width: 85%;;
+    }
+
+}
+
+@media only screen and (max-width: 705px) {
+    .large{
+        white-space: pre-wrap;
+        font-size: 30px;
+    }
+    .small{
+        white-space: pre-wrap;
+    }
+    .about{
+        width:90%;
+    }
+}
+
+
+
+
+
 /* animations */
 @keyframes comeup {
     from{

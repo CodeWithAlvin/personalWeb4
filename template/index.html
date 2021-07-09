@@ -100,7 +100,7 @@
         <a href="{{project.URL}}" class="btn-primary">View</a>
       </div>
         <div class="tags">
-        {% for tag in blog.TAGS|split:"," %}
+        {% for tag in project.TAGS|split:"," %}
         <p>{{tag}}</p>
         {% endfor %}
         </div>

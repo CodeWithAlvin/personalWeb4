@@ -229,12 +229,14 @@ a{
     color: rgb(209, 173, 173);
 }
 .coursel-heading{
+    padding: 0 10px;
     font-family: 'Quantico', sans-serif;
     font-size: 30px;
     font-weight: 1000;
     color:rgb(20, 108, 240);
 }
 .coursel-desc{
+    padding: 0 10px;
     color:#000;
     font-size: 18px;
     font-weight: 500;
@@ -300,7 +302,7 @@ a{
     background-color: rgb(20, 118, 246);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1093px) {
     .navigation{
         display: none;
     }

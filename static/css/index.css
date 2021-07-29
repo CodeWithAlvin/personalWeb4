@@ -10,7 +10,6 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-color:#fff;
     box-sizing: border-box;
-    background-color:#f2f2f2;
     overflow-x: hidden;
 }
 a{
@@ -196,21 +195,21 @@ a{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
-    cursor: pointer;
     border: 3px transparent;
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 20px 20px 8px 8px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 16px;
     position: relative;
+    background-color: #fff;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .coursel:hover{
     background-color:rgb(158, 197, 255) ;
     color: #000;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .thumbnail img{
     width: 100%;
@@ -231,6 +230,7 @@ a{
 .coursel-heading{
     padding: 0 10px;
     font-family: 'Quantico', sans-serif;
+    width:100%;
     font-size: 30px;
     font-weight: 1000;
     color:rgb(20, 108, 240);
@@ -243,14 +243,16 @@ a{
 }
 .btn-primary{
     margin-top:20px;
-    padding: 15px 20px;
-    border: 2px transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 15px 40px;
+    border: 2px solid #fff;
     border-radius: 6px;
     color: rgb(71, 71, 238);
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 2.3px;
-    background-color: rgba(173, 173, 173, 0.96);
+    background-color:rgb(158, 197, 255);
 
 }
 .tags{
@@ -264,7 +266,7 @@ a{
     text-align: center;
     display: inline;
     padding: 4px 4px ;
-    background-color:#e6e6cff5;
+    background-color:#def5fb;
     border:2px transparent;
     border-radius: 4px;
     margin:10px 6px ;
@@ -285,7 +287,7 @@ a{
     margin-top: 20px;
 }
 .contact-section{
-    background-color: rgb(233, 250, 245);
+    background-color:#ffffff;
 }
 .contact-icon{
     display: flex;
@@ -310,7 +312,7 @@ a{
         grid-template-columns: 1fr;
     }
     .coursel{
-        width: 85%;;
+        width: 90%;
     }
 
 }
@@ -343,7 +345,7 @@ a{
 @keyframes comeup {
     from{
         opacity: 0;
-        font-size: 500%;
+        transform: scale(8);
     }
     to{
         opacity: 1;

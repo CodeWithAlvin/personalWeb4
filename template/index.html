@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load custom_tags %}
+{% load custom_tags %} 
 <!--Title goes here-->
 {% block title %}ALVIN SAINI{% endblock %}
 <!--Head all css and fonts goes here-->
@@ -91,6 +91,7 @@
 
   {% for project in Projects %}
     <div class="coursel">
+    <a href="{{project.URL}}">
       <div class="thumbnail">
         <img src="{{project.THUMBNAIL}}" alt="thumbnail">
       </div>
@@ -98,13 +99,13 @@
       <div class="info">
         <p class="coursel-heading">{{project.NAME}}</p>
         <p class="coursel-desc">{{project.DESC}}</p>
-        <a href="{{project.URL}}" class="btn-primary">View ➡️</a>
       </div>
         <div class="tags">
         {% for tag in project.TAGS|split:"," %}
         <p>{{tag}}</p>
         {% endfor %}
         </div>
+      </a>
     </div>
  {% endfor %}
  </div>
@@ -117,6 +118,7 @@
   <div class="showcase">
   {% for blog in Blogs %}
   <div class="coursel">
+      <a href="{{blog.URL}}" >
       <div class="thumbnail">
         <img src="{{blog.THUMBNAIL}}" alt="thumbnail">
       </div>
@@ -124,13 +126,13 @@
       <div class="info">
         <p class="coursel-heading">{{blog.TITLE}}</p>
         <p class="coursel-desc">{{blog.DESC}}</p>
-        <a href="{{blog.URL}}" class="btn-primary">View ➡️</a>
       </div>
       <div class="tags">
         {% for tag in blog.TAGS|split:"," %}
         <p>{{tag}}</p>
         {% endfor %}
       </div>
+      </a>
     </div>
   {% endfor %}
   </div>

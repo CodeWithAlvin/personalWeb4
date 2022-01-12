@@ -21,3 +21,13 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.TITLE
+
+class Review(models.Model):
+    NAME=models.CharField(max_length=100)
+    COUNTRY=models.CharField(max_length=50)
+    RATING=models.CharField(max_length=3)
+    IMGURL=models.URLField(max_length=500,null=True, blank=True)
+    TEXT=models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.NAME + " " + self.COUNTRY

@@ -10,8 +10,8 @@ body{
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    /* background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); */
 
 }
 a{
@@ -214,7 +214,7 @@ a{
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .coursel:hover{
-    background-color:rgb(158, 197, 255) ;
+    background-color:#66acf7;
     color: #000;
     transform: scale(1.05);
 }
@@ -266,8 +266,8 @@ a{
     border-radius: 4px;
     margin:10px 6px ;
 }
-.about-sec{
-    background: #98bdf0;
+.blue-sec{
+    background: #66acf7;
 }
 
 .about{
@@ -332,9 +332,103 @@ a{
 
 }
 
+.r-container{
+    margin: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.box{
+    cursor: pointer;
+    margin: 20px;
+    background-color: #66acf7;
+    min-height: 300px;
+    min-width: 250px;
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 370px;
+    overflow: hidden;
+    z-index: 1;
+}
+.box:hover .fiverr {
+    display: flex;
+    
+    
+}
+.fiverr {
+    display: none;
+    background-color: rgb(238, 237, 237);
+    width: 270px;
+    height: 370px;
+    overflow:hidden;
+    cursor: pointer;
+}
+.r-head{
+    display: flex;
+    align-items: center;
 
+}
+.quote{
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+}
+.rating{
+    margin-left: 80px;
+    margin-right: 5px;
+    font-size: 30px;
+    color:#ffd900;
+}
+.star{
+    height: 30px;
+    width: 30px;
 
+}
+.r-text{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.r-text p{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 250px;
+    border-radius: 15px;
+}
+.r-foot{
+    display: flex;
+    justify-content: center;
+}
+
+.person{
+    width: 60px;
+    height: 60px;
+    border: 2px ;
+    border-radius:50%;
+    margin-right: 20px;
+    background-color: #fdfffea9;
+    padding: 5px;
+}
+
+.name,.country{
+    color: #fffffff5;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.name{
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+.client{
+    display: flex;
+    flex-direction: column;
+}
 
 /* animations */
 @keyframes comeup {

@@ -354,6 +354,7 @@ a{
 }
 .box:hover .fiverr {
     display: flex;
+    animation:comeup 700ms;
     
     
 }
